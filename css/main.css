@@ -65,7 +65,7 @@ justify-content: space-around;*/
   text-decoration: none;
   color: rgba(255,255,255,1);
   transition: all 300ms ease-in-out;
-  border: 1px solid rgb(255,255,255,0);
+  border: 1px solid rgba(255,255,255,0);
   border-radius: 4px;
 }
 .right a:hover{
@@ -78,6 +78,26 @@ justify-content: space-around;*/
   border-radius: 4px;
   background-color:rgba(191, 60, 39,1);
 }
+.login-btn:hover, .menu a:hover{
+
+  transition: all 300ms ease-in-out;
+
+  color: rgba(255,255,255,.6);
+}
+.menu{
+  padding: 6px 12px;
+  border-radius: 4px;
+
+  background-color:rgba(191, 60, 39,1);
+  display: none;
+}
+.menu a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
 
 
 .hero-section{
@@ -168,28 +188,36 @@ color: white;
 }
 }
 @media screen and (max-width: 600px){
-.image img{
-  width: 100%;
+.menu{
+  display: block;
+  float: right;
+  border: none;
+  font-weight: bold;
 }
-.navbar{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .right{
   float: none;
+  top: 70px;
+  width: 40%;
+  margin: auto;
+  position: absolute;
+  display: block;
+  text-align: center;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 51, 48, .5);
 }
 .right a{
-  width: 90%;
+
   margin: auto;
   display: block;
 }
 
-
+.main-content img{
+  width: 350px;
+}
 .content{
-
-  width: 85%;
+    width: 85%;
   margin: auto;
 }
 .content h4{
@@ -200,29 +228,10 @@ color: white;
   margin: 15px auto 30px;
   font-size: 1em;
 }
-  .section1{
+  .section1,.section2{
     display: none;
   }
-  .section2{
-    display: none;
-  }
-
   .logo-top{
-    width: 100%;
     display: block;
-    text-align: center;
-
   }
-  .right{
-float: none;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-  }
-  .main-content{
-    font-size: 4vw;
-  }
-.right{
-  font-size: 3.5vw;
-}
 }
