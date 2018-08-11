@@ -201,7 +201,7 @@ color: white;
   width: 40%;
   margin: auto;
   position: absolute;
-  display: block;
+  display: none;
   text-align: center;
   right: 0;
   left: 0;
